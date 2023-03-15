@@ -682,7 +682,7 @@ pub struct GetTransactionResultDetail {
     #[serde(with = "bitcoin::util::amount::serde::as_btc")]
     pub amount: SignedAmount,
     pub label: Option<String>,
-    pub vout: u32,
+    pub vout: Option<u32>,
     #[serde(default, with = "bitcoin::util::amount::serde::as_btc::opt")]
     pub fee: Option<SignedAmount>,
     pub abandoned: Option<bool>,
