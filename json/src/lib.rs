@@ -932,8 +932,9 @@ pub enum ScriptPubkeyType {
     Witness_v0_KeyHash,
     Witness_v0_ScriptHash,
     Witness_v1_Taproot,
-    Witness_Unknown,
+    Witness_Mweb_Pegin,
     Witness_Mweb_HogAddr,
+    Witness_Unknown,
 }
 
 #[derive(Clone, PartialEq, Eq, Debug, Deserialize, Serialize)]
